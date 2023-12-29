@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+}
+body {
+  background: inherit;
+  color: inherit;
+}
+table {
+  width: 100%;
+}
+th,
+td,
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+}
