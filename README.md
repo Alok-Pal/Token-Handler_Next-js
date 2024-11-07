@@ -24,5 +24,5 @@ This project implements a **JWT (JSON Web Token)** authentication system to secu
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/jwt-token-handler.git
+   git clone https://github.com/Alok-Pal/jwt-token-handler.git
    cd jwt-token-handler
