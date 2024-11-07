@@ -1,32 +1,28 @@
-# Next.js Project
+# JWT Token Handler
 
-This is a Next.js project bootstrapped with create-next-app.
+![Node.js](https://img.shields.io/badge/Node.js-v16.x-green) ![JWT](https://img.shields.io/badge/JWT-Authentication-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project implements a **JWT (JSON Web Token)** authentication system to secure API routes. The JWT handler is designed to issue, validate, and refresh tokens, allowing users to authenticate and securely access resources. The handler works by generating tokens upon successful login and validating them on each subsequent request to ensure secure access to protected routes.
 
-```bash
-npm run dev
-# or
-yarn dev
+### Key Features
+- **Token Issuance**: Generates a JWT token on successful user login or registration.
+- **Token Validation**: Validates the JWT on each request to ensure secure access to protected endpoints.
+- **Token Refresh**: Refreshes the JWT token when it is close to expiration.
+- **Authentication Middleware**: Protects routes by requiring a valid token for access.
 
+## Technologies Used
 
-Open http://localhost:3000 with your browser to see the result.
+- **Node.js** - Backend runtime
+- **JWT (JSON Web Tokens)** - For secure token-based authentication
+- **Express.js** - Web framework to handle routing and middleware
+- **jsonwebtoken** - Library to generate and verify JWT tokens
+- **bcryptjs** - For hashing passwords (if included in the project)
 
-You can start editing the page by modifying pages/index.js. The page auto-updates as you edit the file.
+## Setup and Installation
 
-API routes can be accessed on http://localhost:3000/api/hello. This endpoint can be edited in pages/api/hello.js.
-
-The pages/api directory is mapped to /api/*. Files in this directory are treated as API routes instead of React pages.
-
-Learn More
-To learn more about Next.js, take a look at the following resources:
-
-Next.js Documentation - learn about Next.js features and API.
-Learn Next.js - an interactive Next.js tutorial.
-You can check out the Next.js GitHub repository - your feedback and contributions are welcome!
-Deployment
-The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.
-
-Check out our Next.js deployment documentation for more details.
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/jwt-token-handler.git
+   cd jwt-token-handler
